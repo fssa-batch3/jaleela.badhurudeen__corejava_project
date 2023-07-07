@@ -1,7 +1,7 @@
 package day01.practice;
 
 public class AccessModifier {
-	public static String a = "a";
+	private static String a = "a";
 	public static String b = "b";
 	public static String c = "c";
 	public static String d = "d";
