@@ -1,4 +1,6 @@
+
 package day02.practice;
+import java.util.*;
 
 /*
  * Create a logger class and utility methods (log, debug , error) and 
@@ -49,10 +51,9 @@ package day02.practice;
 			logger.debug(2);
 			logger.error(3);
 
-
+			
+			
 			
 		}
-		
-		
 		// Similarly write overloaded methods for error and info.
 	}
