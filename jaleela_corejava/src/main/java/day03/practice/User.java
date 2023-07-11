@@ -12,9 +12,12 @@ class UserDetails{
 	public String password;
 	public String emailId;
 	
+	// default constructor
 	public UserDetails(){
 		
 	}
+	
+	// overloaded constructor 
 	
 	public UserDetails(String name, String password, String emailId) {
 		this.name = name;
@@ -30,10 +33,10 @@ class UserDetails{
 
 public class User {
 public static void main(String[] args) {
-	
+	// calling the constructor with initialize value
 	UserDetails user = new UserDetails("jaleela","jaleela21","jaleela@gmail.com");
 	System.out.println(user.name+" - "+user.password+" - "+user.emailId);
 	
-	
+	 
 }
 }

@@ -21,6 +21,7 @@ package day03.practice;
     private int id;
     private String name;
  
+    // constructor
     public Employee(int id, String name) {
         this.id = id;
         System.out.print("id="+id+", ");
@@ -29,9 +30,13 @@ package day03.practice;
 
     }
 }
+ 
+ 
 public class TestEmployee {
 	 
     public static void main(String[] args) {
+    	
+    	// calling the constructor with initialization
         Employee e1 = new Employee(1, "naresh");
         Employee e2 = new Employee(2, "suresh");
     }
