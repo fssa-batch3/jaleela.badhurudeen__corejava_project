@@ -60,7 +60,7 @@ public abstract class Polygon {
 
 }
 
- class AnotherClass extends Square {  // This line will give compiler error
+public abstract class AnotherClass extends Square {  // This line will give compiler error
 
 }
 ```

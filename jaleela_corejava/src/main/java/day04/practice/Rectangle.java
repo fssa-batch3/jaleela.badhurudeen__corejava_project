@@ -7,7 +7,7 @@
 
 package day04.practice;
 
-class Rectangle extends PolygonShp {
+ class Rectangle extends PolygonShp {
 	
 	protected double length;
 	protected double breadth;
