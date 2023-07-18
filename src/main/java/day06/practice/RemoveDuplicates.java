@@ -52,10 +52,7 @@ public class RemoveDuplicates {
 		for (String city : cityList) {
 			if (!cityList2.contains(city)) {
 				cityList2.add(city);
-			} else {
-				throw new IllegalArgumentException("Array contains duplicate elements");
-			}
-
+			} 
 		}
 
 		return cityList2;

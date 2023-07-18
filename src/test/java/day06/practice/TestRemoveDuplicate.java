@@ -35,7 +35,7 @@ public class TestRemoveDuplicate {
 			RemoveDuplicates.removeDuplicate(null);
 			fail("Null ArrayList Test Case Is Failded");
 		} catch (IllegalArgumentException ex) {
-			assertEquals("ArrayList Cann't Be Null", ex.getMessage());
+			assertEquals("Array mush have elements", ex.getMessage());
 		}
 
 	}
