@@ -1,52 +1,63 @@
+/*
+ * Cat 1:
+Age: 4
+Color: White
+Speaks: Meow!
+Cat 2:
+Age: 3
+Color: Black
+Speaks: Meow!
+ */
+
 package day01.practice;
 
 public class Cat {
-    private boolean hasDots;
-    private String color;
+	private static int age;
+	private static String color;
 
-    // Constructor
-    public Cat(boolean hasDots, String color) {
-        this.hasDots = hasDots;
-        this.color = color;
-    }
+	// Constructor
+	public Cat(int age, String color) {
+		this.age = age;
+		this.color = color;
+	}
 
-    // Getters and setters
-    public boolean hasDots() {
-        return hasDots;
-    }
+	// Getters and setters
 
-    public void setHasDots(boolean hasDots) {
-        this.hasDots = hasDots;
-    }
+	public String getColor() {
+		return color;
+	}
 
-    public String getColor() {
-        return color;
-    }
+	public void setColor(String color) {
+		this.color = color;
+	}
 
-    public void setColor(String color) {
-        this.color = color;
-    }
+	public int getAge() {
+		return age;
+	}
 
-		public void speak() {
-        System.out.println("Meow!");
-    }
+	public void setAge(int age) {
+		this.age = age;
+	}
 
-    // Main method to create Dog objects
-    public static void main(String[] args) {
-        // Create two Dog objects
-    	Cat cat1 = new Cat(true, "purple");
-    	Cat cat2 = new Cat(true, "blue");
+	public String speak() {
+		return "Meow!";
+	}
 
-        // Print the attributes of each Dog
-        System.out.println("Cat 1:");
-        System.out.println("Has Dots: " + cat1.hasDots());
-        System.out.println("Color: " + cat1.getColor());
-				System.out.println("Speaks: " + cat1.speak());
+	// Main method to create Dog objects
+	public static void main(String[] args) {
+		// Create two Dog objects
+		Cat cat1 = new Cat(3, "White");
+		Cat cat2 = new Cat(4, "Black");
 
-        System.out.println("Cat 2:");
-        System.out.println("Has Dots: " + cat2.hasDots());
-        System.out.println("Color: " + cat2.getColor());
-				System.out.println("Speaks: " + cat2.speak()
-    }
-}
+		// Print the attributes of each Dog
+		System.out.println("Cat 1:");
+		System.out.println("Age: " + cat1.getAge());
+		System.out.println("Color: " + cat1.getColor());
+		System.out.println("Speaks: "+ cat1.speak());
+
+		System.out.println("Cat 2:");
+		System.out.println("Age: " + cat1.getAge());
+		System.out.println("Color: " + cat2.getColor());
+		System.out.println("Speaks: "+ cat2.speak());
+	}
 }
