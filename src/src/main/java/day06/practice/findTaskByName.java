@@ -13,20 +13,19 @@ class NewTask {
 	    }
 }
 public class findTaskByName {
-   public static void main(String[] args) {
+   public static void main(String[] args)throws Exception {
 	   ArrayList<NewTask> tasks = new ArrayList<>();
        tasks.add(new NewTask("walking"));
        tasks.add(new NewTask("jogging"));
        tasks.add(new NewTask("running"));
-       boolean exists = findTaskByName("Exercise", tasks);
+       boolean exists = findTaskByName("walking", tasks);
        System.out.println("Task Status : " + exists);
    }
-   public static  boolean findTaskByName(String name, ArrayList<NewTask> tasks) {
+   public static  boolean findTaskByName(String name, ArrayList<NewTask> tasks)throws Exception {
        for (NewTask task : tasks) {
            if (task.getName().equals(name)) {
                return true;
            }
        }
-       return false;
-}
+       throw new Exception("Not found");}
 }
