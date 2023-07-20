@@ -27,7 +27,7 @@ class UserAlreadyExistsException extends RuntimeException {
 	/**
 	 * 
 	 */
-	private static final long serialVersionUID = -8105491977357554060L;
+//	private static final long serialVersionUID = -8105491977357554060L;
 
 	// Calling each super constructors for each of the types
 	public UserAlreadyExistsException(String msg) {
