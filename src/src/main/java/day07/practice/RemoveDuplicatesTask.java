@@ -18,7 +18,7 @@ package day07.practice;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
+
 class Task {
 	 int id;
 	 String name;

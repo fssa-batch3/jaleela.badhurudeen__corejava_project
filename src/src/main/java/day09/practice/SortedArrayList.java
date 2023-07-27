@@ -1,53 +1,71 @@
-/*
- * Question#1: Using the ArrayList<Integer> sort a list of integers read from the user
-
-Sample Input: 
-
-*Enter numbers: 8 9 45 12 1*
-
-Sample Output: 
-
-*Sorted list: 1 8 9 12 45*
- * 
- * 
- */
-
-
-
 package day09.practice;
 
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 import java.util.Scanner;
 
-
 public class SortedArrayList {
-
 	public static void main(String[] args) {
-//		ArrayList<Integer> IntegerArray =new ArrayList<Integer>();
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Enter array size");
-		int n=sc.nextInt();
-		int count=0;
-		ArrayList<Integer> arr=new ArrayList<Integer>();
-		while(count<n) {
-			System.out.println("enter numbers");
-			int number=sc.nextInt();
-		arr.add(number);
-			count++;
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter a how may number should be");
+
+		int n = scan.nextInt();
+		ArrayList<Integer> arrayList = new ArrayList<>();
+		System.out.println("Enter a the number should be");
+
+		for (int i = 0; i < n; i++) {
+			int input = scan.nextInt();
+			arrayList.add(input);
 		}
+
+		List<Integer> list = sortNumber(arrayList);
+		System.out.print("Sorted list: ");
+		String data = "";
+		for (int number : list) {
+			data += number + " ";
+
+		}
+
+		System.out.print(data);
+	}
+
+	
+	
+	public static boolean ValidNumberSorting(int n) throws IllegalArgumentException {
 		
-		Collections.sort(arr);
-		for(int sortedNumber :arr) {
-			System.out.println(sortedNumber);
+		
+	
+		if(n<=1) {
+		throw new	IllegalArgumentException("The number cannot be 1 and less than1");
 			
 		}
+		ArrayList<Integer> arrayList1 = new ArrayList<>();
+		System.out.println("Enter a the number should be");
+
+//		for (int i = 0; i < n; i++) {
+//			int input = scan.nextInt();
+//			arrayList1.add(input);
+//		}
+
+		List<Integer> list = sortNumber(arrayList1);
+		System.out.print("Sorted list: ");
+		String data = "";
+		for (int number : list) {
+			data += number + " ";
+
+		}
+
+//		System.out.print(data);
+return true;
+
 		
-		sc.close();
-		
-		
-		
-		
-		
+	}
+	public static List<Integer> sortNumber(ArrayList<Integer> arrayList)throws IllegalArgumentException {
+		if(arrayList==null) {
+			throw new IllegalArgumentException("Array cannot be empty");
+			
+		}
+		Collections.sort(arrayList);
+		return arrayList;
+
 	}
 }

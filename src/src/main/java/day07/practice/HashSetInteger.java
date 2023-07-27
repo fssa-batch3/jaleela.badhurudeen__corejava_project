@@ -22,7 +22,7 @@ public class HashSetInteger {
         numbers.add(4);
         numbers.add(3);
         numbers.add(10);
- 
+
         System.out.println("Using ArrayList :" + numbers);
          
         // using hash set duplicates
@@ -31,7 +31,8 @@ public class HashSetInteger {
         numbers2.add(4);
         numbers2.add(3);
         numbers2.add(10);
- 
+        numbers2.add(10);
+
         System.out.println("Using Set :" + numbers2);
         removeDuplicateElements(numbers2);
         }

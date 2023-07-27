@@ -31,9 +31,6 @@ Admin: Sundar
 package day08.practice;
 import java.util.*;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class HashMapDemo3 {
 	
 	 public static void main(String[] args) {
@@ -75,4 +72,9 @@ public class HashMapDemo3 {
 		 
 		 
 }
+
+	public Map<String, List<String>> buildDeptEmployeesMap(String[] input) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
