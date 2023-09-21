@@ -1,8 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.fssa.specsee.servicelayer.TestOrderService
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.424 s <<< FAILURE! - in com.fssa.specsee.servicelayer.TestOrderService
-testAddOrder  Time elapsed: 1.405 s  <<< ERROR!
-java.lang.NullPointerException: Cannot invoke "com.fssa.specsee.modelobjects.Product.getProductPrice()" because "product" is null
-	at com.fssa.specsee.servicelayer.TestOrderService.testAddOrder(TestOrderService.java:29)
-
