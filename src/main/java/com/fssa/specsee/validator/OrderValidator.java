@@ -65,7 +65,7 @@ public class OrderValidator {
 
 	public static boolean validatePhoneNumber(String comments) throws CustomException {
 
-		if (comments != null && !comments.isEmpty() && comments.length() < 15) {
+		if (comments == null || comments.isEmpty() || comments.length() < 10) {
 			throw new CustomException(OrderErrorMessages.INVALID_COMMENTSTATEMENT);
 		}
 

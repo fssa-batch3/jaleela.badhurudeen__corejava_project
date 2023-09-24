@@ -22,7 +22,7 @@ public class TestOrderService {
 			
 			Order order = new Order();
 			List<OrderProduct> productsList = new ArrayList<>();
-			int productId= 21;
+			int productId= 2;
 			Product product=ProductService.getProductById(productId);
 			OrderProduct product1 = new OrderProduct();
 			product1.setProductId(productId);
@@ -35,7 +35,8 @@ public class TestOrderService {
 			order.setTotalAmount(186);
 			order.setProductsList(productsList);
 			order.setOrderDate(LocalDate.now());
-			order.setUserID(2);
+			order.setUserID(1);
+			order.setPhoneNumber("8940169934");
 			order.setStatus(OrderStatus.ORDERED);
 			System.out.println(order);
 			Assertions.assertTrue(OrderService.addOrder(order));
